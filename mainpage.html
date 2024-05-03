@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive; 
+            background-image: url('Lili2.gif'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: pink; 
+        }
+
+        #main-content {
+            text-align: center;
+            margin-top: 20px;
+            position: relative; 
+        }
+
+        #main-content h1 {
+            margin-bottom: 20px;
+            color: pink; 
+        }
+
+        #main-content p {
+            margin-bottom: 20px;
+            color: pink; 
+        }
+
+        #main-content button {
+            padding: 10px 20px;
+            background-color: pink; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            box-shadow: 0 0 10px rgba(255, 192, 203, 0.5); 
+        }
+
+        #main-content button:hover {
+            background-color: #ff69b4; 
+        }
+
+
+        .message {
+            text-align: center;
+            margin-top: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(255, 192, 203, 0.5); 
+        }
+
+        .message a {
+            color: pink; 
+        }
+
+        .message a:hover {
+            text-decoration: underline;
+        }
+
+        #back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Back Button -->
+    <button id="back-button" onclick="location.href='Index.html';">Back</button>
+
+    <!-- Main Content Section -->
+    <section id="main-content">
+        <h1>Main Page</h1>
+        
+        <!-- Buttons -->
+        <button onclick="location.href='page2.html';">Page 2</button>
+        <button onclick="location.href='page3.html';">Page 3</button>
+
+      
+        
+        <!-- Message -->
+        <p class="message">These are the previous tasks you were given. Do you want to go back to them? If so, click on the buttons.</p>
+    </section>
+</body>
+</html>

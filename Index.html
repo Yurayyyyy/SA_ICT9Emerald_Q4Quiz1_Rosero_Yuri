@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive; 
+            background-image: url('Lili.gif'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #login-form {
+            background-color: rgba(255, 255, 255, 0.7); 
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+            text-align: center;
+            max-width: 400px; 
+        }
+
+        #login-form h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #login-form img {
+            width: 150px; 
+            border-radius: 50%; 
+            margin-bottom: 20px;
+        }
+
+        #login-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #login-form label {
+            margin-bottom: 10px;
+        }
+
+        #login-form input[type="text"],
+        #login-form input[type="password"],
+        #login-form button {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #login-form button {
+            background-color: pink; 
+            color: white;
+            cursor: pointer;
+        }
+
+        .message {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .message a {
+            color: pink; 
+        }
+
+        .message a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    
+    <section id="login-form">
+        <h1>Welcome to My Portfolio!</h1>
+        <img src="Yuri.jpg" alt="Profile Picture"> 
+        <form id="login-form" action="mainpage.html" method="post"> 
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Log in</button>
+            <p class="message">Don't have an account? <a href="#">Sign up here</a>.</p> 
+        </form>
+    </section>
+</body>
+</html>
